@@ -1,5 +1,5 @@
 server:
-  port: 8002
+  port: 8000
 spring:
   jpa:
     generate-ddl: false
@@ -34,3 +34,5 @@ eureka:
       defaultZone: http://peer1:8761/eureka/,http://peer1:8762/eureka/
   instance:
     prefer-ip-address: true
+    metadata-map:
+      my-metadata: 我自定义的元数据
